@@ -11,6 +11,13 @@ label {
     margin: 10px 0 5px;
 }
 
+#contato{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 input, textarea, button {
     width: 100%;
     padding: 10px;
@@ -34,6 +41,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
+    margin-top: 137px;
     padding: 10px 0;
     width: 100%;
 }
