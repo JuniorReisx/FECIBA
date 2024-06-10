@@ -1,0 +1,87 @@
+
+
+.section {
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: var(--delay, 0s);
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    background-color: #e0f7e0;
+    transform: translateY(-5px);
+}
+
+#details {
+    display: none;
+    animation: fadeIn 0.5s forwards;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.submit-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}

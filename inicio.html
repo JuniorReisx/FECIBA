@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarte Solidário</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <header>
+        <div id="logo" >
+    <img src="/assets/logoplanta.png" id="logo" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#types">Tipos de Descarte</a></li>
+                <li><a href="#contact">Voluntarios</a></li>
+                <li><a href="#contact">ONGS</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="home" class="section fade-in">
+            <h1>Bem-vindo ao Descarte Solidário</h1>
+            <p>Faça sua parte para um mundo mais sustentável!</p>
+        </section>
+    
+        <section id="types" class="section fade-in">
+            <h2>Tipos de Descarte</h2>
+            <div class="card" onclick="showDetails('eletronicos')">
+                <h3>Eletrônicos</h3>
+                <p>Saiba mais sobre o descarte de eletrônicos.</p>
+            </div>
+            <div class="card" onclick="showDetails('plasticos')">
+                <h3>Plásticos</h3>
+                <p>Saiba mais sobre o descarte de plásticos.</p>
+            </div>
+            <div class="card" onclick="showDetails('organicos')">
+                <h3>Orgânicos</h3>
+                <p>Saiba mais sobre o descarte de orgânicos.</p>
+            </div>
+        </section>
+    
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
