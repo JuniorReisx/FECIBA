@@ -1,4 +1,10 @@
 
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .section {
     padding: 20px;
     text-align: center;
@@ -11,14 +17,25 @@
     animation-delay: var(--delay, 0s);
 }
 
-.card {
+.cards a img{
+    height: 100%;
+}
+#imagens{
+    height: 300px;
+}
+.cards a{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
     background-color: white;
     border: 1px solid #ddd;
     padding: 15px;
     margin: 15px;
     height: 254px;
     background-color: #4CAF50;
-    display: inline-block;
     cursor: pointer;
     transition: all 0.4s;
     width: 190px;
@@ -26,86 +43,24 @@
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.705);
     font-weight: 900;
 }
-.cards{
+.cardss{
     display: flex;
-    justify-content: space-between;
-}
-.cards2{
-    display: flex;
-    justify-content: center;
-}
-.card:hover {
-    background-color: #e0f7e0;
-    transform: scale(1.2);
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.705);
-    background: rgb(1,14,43);
-}
-.first-content{
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
-    transition: all 0.4s;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    opacity: 1;
-    border-radius: 15px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0rem 4rem;
 }
 h2{
     padding-bottom: 40px;
 }
 
-.card:hover.first-content{
-    height: 0px;
-    opacity: 0;
-}
 .imagens{
     width: 250px;
 }
 #details {
     display: none;
     animation: fadeIn 0.5s forwards;
-}
-
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
-
-.submit-btn {
-    font-size: 20px;
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
 }
 
 @keyframes fadeInUp {
