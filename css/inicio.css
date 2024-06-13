@@ -1,9 +1,11 @@
 
-
 .section {
     padding: 20px;
     text-align: center;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     transform: translateY(20px);
     animation: fadeInUp 1s forwards;
     animation-delay: var(--delay, 0s);
@@ -24,7 +26,14 @@
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.705);
     font-weight: 900;
 }
-
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards2{
+    display: flex;
+    justify-content: center;
+}
 .card:hover {
     background-color: #e0f7e0;
     transform: scale(1.2);
@@ -48,25 +57,6 @@
 }
 h2{
     padding-bottom: 40px;
-}
-.second-content{
-    height: 0%;
-    width: 100%;
-    opacity: 0;
-    display: list-item;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: all 0.4s;
-    font-size: 0px;
-    transform: rotate(90deg) scale(-1);
-}
-
-.card:hover.second-content{
-    opacity: 1;
-    height: 100%;
-    font-size: 1rem;
-    transform: rotate(0deg);
 }
 
 .card:hover.first-content{
