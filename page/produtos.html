@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Produtos</h1>
+        <form id="productForm">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" required>
+            
+            <label for="productType">Tipo:</label>
+            <select id="productType" required>
+                <option value="metal">Metal</option>
+                <option value="plastico">Plástico</option>
+                <option value="eletronico">Eletrônico</option>
+                <option value="organico">Orgânico</option>
+                <option value="papel">Papel</option>
+            </select>
+            
+            <button type="submit">Adicionar Produto</button>
+        </form>
+        
+        <h2>Produtos Cadastrados</h2>
+        <div id="productContainer">
+            <div class="product-type" id="metal">
+                <h3>Metal</h3>
+                <ul class="productList"></ul>
+            </div>
+            <div class="product-type" id="plastico">
+                <h3>Plástico</h3>
+                <ul class="productList"></ul>
+            </div>
+            <div class="product-type" id="eletronico">
+                <h3>Eletrônico</h3>
+                <ul class="productList"></ul>
+            </div>
+            <div class="product-type" id="organico">
+                <h3>Orgânico</h3>
+                <ul class="productList"></ul>
+            </div>
+            <div class="product-type" id="papel">
+                <h3>Papel</h3>
+                <ul class="productList"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
