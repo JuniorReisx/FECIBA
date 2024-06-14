@@ -17,6 +17,9 @@ label {
     justify-content: center;
     
 }
+header{
+    height: 104px;
+}
 
 input, textarea, button {
     width: 100%;
