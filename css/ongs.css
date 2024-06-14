@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #00473B;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    display: flex;
+    margin-right: 20px;
+}
+li a{
+    display: flex;
+    gap: -30px;
+}
+nav{
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 14.4px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+li{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+main {
+    padding: 20px;
+}
+a img{
+    height: 60px;
+}
+#ongs-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ong-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 45%;
+    transition: transform 0.3s ease;
+}
+
+.ong-card:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+.ong-content {
+    padding: 20px;
+}
+
+.details {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+.ong-card:hover button {
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #45a049;
+}

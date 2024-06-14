@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://pa1.aminoapps.com/6722/f8e923451ded99302ad9be9294d16c9fbd289469_hq.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.calendar-header button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-grid .day {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.calendar-grid .day:hover {
+    background-color: #e9e9e9;
+}
+
+.calendar-grid .day .date {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.calendar-grid .day .event {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+}
