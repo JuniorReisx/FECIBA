@@ -1,13 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://pa1.aminoapps.com/6722/f8e923451ded99302ad9be9294d16c9fbd289469_hq.gif') no-repeat center center fixed;
+    background: url('https://pa1.aminoapps.com/6722/f8e923451ded99302ad9be9294d16c9fbd289469_hq.gif')  center center fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+}
+#principal{
+    padding: 2rem;
 }
 
 .calendar-container {
